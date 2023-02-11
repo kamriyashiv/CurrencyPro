@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"/>
+    <title>Currency Converter - Application</title>
+</head>
+<body>
+    <main>
+        <section>
+            <div class="mainBox">
+                <div class="mainLayer" id="layer">                    
+                    <div class="container">
+                        <div class="titleBox">
+                            <h2 id="Error"></h2>
+                            <h1 id="hText" data="CurrencyConverter">CurrencyConverter</h1>
+                        </div>
+                        <div class="row">
+                            <div class="box1">                                
+                                <div class="exchangeBox">
+                                    <p><span id="rate1">1</span> <span id="Cname1">Indian Rupee equals</span></p>
+                                    <h1><span id="rate2">0.012</span> <span id="Cname2">United States Dollar</span></h1>
+                                    <p id="cDate">4 Feb, 9:24 am UTC</p>
+                                    <br/>
+                                    <div class="currencyInfo1">
+                                        <div class="inputCover">
+                                            <input type="number" value="1" id="input1">
+                                            <select name="Currency" id="Currency1"></select>
+                                        </div>
+                                    </div>
+                                    <br/>
+                                    <div class="currencyInfo1">
+                                        <div class="inputCover">
+                                            <input type="number" value="1" id="input2" placeholder="Result" >
+                                            <select name="Currency" id="Currency2"></select>
+                                        </div>
+                                    </div>
+                                    <div class="btnArea">                                       
+                                        <div class="historyBtn">
+                                            <button id="History">History</button>
+                                        </div>
+                                    </div>
+                                </div><!--end-exchange-box-->
+                                <div class="HistoryBox " id="Hbox">
+                                    <h2>Currency History</h2>
+                                    <div class="tableHieght">
+                                        <table class="tabelBox">
+                                            <thead>
+                                                <tr>
+                                                    <th>Currency</th>
+                                                    <th>Currency</th>
+                                                    <th>Price</th>
+                                                    <th>Date</th>                                                    
+                                                </tr>
+                                            </thead>
+                                            <tbody id="dataHistory"></tbody>
+                                        </table>                                        
+                                        <div class="historyBtn">
+                                            <button id="clear">Clear History</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main><!--end-main-->
+    <script src="js/script.js"></script>
+</body>
+</html>
